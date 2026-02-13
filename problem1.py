@@ -64,8 +64,9 @@ def hash(text):
     return final_hash, out
 
 # Testing the hash function
-plaintext = "the birthday attack can be performed for any hash functions including sha three"
-result_str, result_nums = hash(plaintext)
+if __name__ == "__main__":
+    plaintext = "the birthday attack can be performed for any hash functions including sha three"
+    result_str, result_nums = hash(plaintext)
 
-print(f"Hash String: '{result_str}'")
-print(f"Hash Values: {result_nums}")
+    print(f"Hash String: '{result_str}'")
+    print(f"Hash Values: {result_nums}")

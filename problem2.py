@@ -22,11 +22,13 @@ def mac(key, plaintext):
     return mac_result_str, mac_result_nums
 
 # Testing the MAC function
-secret_key = "This is example"
-plaintext = "the birthday attack can be performed for any hash functions including sha three"
+if __name__ == "__main__":
 
-mac_str, mac_nums = mac(secret_key, plaintext)
+    secret_key = "This is example"
+    plaintext = "the birthday attack can be performed for any hash functions including sha three"
 
-print(f"Secret Key: '{secret_key}'")
-print(f"MAC Value (String): '{mac_str}'")
-print(f"MAC Value (Numbers): {mac_nums}")
+    mac_str, mac_nums = mac(secret_key, plaintext)
+
+    print(f"Secret Key: '{secret_key}'")
+    print(f"MAC Value (String): '{mac_str}'")
+    print(f"MAC Value (Numbers): {mac_nums}")
